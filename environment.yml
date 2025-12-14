@@ -1,0 +1,36 @@
+name: quantum-credit-risk
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - numpy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - pip:
+    # Quantum Computing - PennyLane
+    - pennylane>=0.43.0
+    - pennylane-qiskit>=0.43.0
+    
+    # Quantum Computing - Qiskit
+    - qiskit>=1.2.0
+    - qiskit-aer>=0.15.0
+    - qiskit-iqm>=17.0
+    - qiskit-machine-learning>=0.7.0
+    - qiskit-algorithms>=0.3.0
+    
+    # Quantum Computing - IQM
+    - iqm-client>=33.0.1
+    
+    # Quantum Computing - Qrisp
+    - qrisp[iqm]
+    
+    # Machine Learning
+    - xgboost
+    
+    # Progress bars
+    - tqdm
+
